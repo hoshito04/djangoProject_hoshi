@@ -87,7 +87,7 @@ DATABASES = {
 }
 """
 DATABASES = {
- 'default': dj_database_url.config(default='postgresql://postgres:postgres@localhost:5432/hj2203-webapps1',
+ 'default': dj_database_url.config(default='postgresql://postgres:postgres@localhost:5432/hn2395-webapps1',
  conn_max_age=600)}
 
 # Password validation
