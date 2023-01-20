@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <style>
+      #red {
+        background-color: #FF0000;
+      }
+
+      .blue {
+        background-color: #0000FF;
+      }
+
+      .yellow {
+        background-color: #FFFF00;
+      }
+    </style>
+</head>
+<body>
+<img src='{% static "myapp/family.jpg" %}' alt="image" width="400px">
+    <div id="red">Apple</div>
+    <div class="blue">Ocean</div>
+    <div class="yellow">Banana</div>
+    <div class="blue">Columbia</div>
+    <div class="yellow">Go Go Curry</div>
+<table>
+    {% for c in currencies %}
+        <tr><td>{{ c.iso }}</td><td>{{ c.long_name }}</td></tr>
+    {% endfor %}
+
+<ul>
+	<li>Wenhan Yang is kind!</li>
+	<li>Afnan Khan is kind!</li>
+	<li>Jingyi Zhang is kind!</li>
+</ul>
+
+
+<table>
+</body>
+</html>
